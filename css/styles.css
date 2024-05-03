@@ -85,6 +85,8 @@ body {
   line-height: 1.1;
   text-decoration: none;
   color: var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .header__contacts-info {
@@ -108,6 +110,8 @@ body {
   line-height: 1.1;
   text-decoration: none;
   color: var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .header__contacts-info-item .icon {
@@ -116,6 +120,8 @@ body {
 
 .header__contacts-info-item a:hover .icon:hover {
   fill: var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 /* Hero section */
@@ -241,6 +247,27 @@ body {
   margin-bottom: 94px;
 }
 
+.whatwedo__visuals-img-box {
+  position: relative;
+}
+
+.overlay-wwd {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 3%;
+}
+
 /* Our Team section */
 
 .team-section {
@@ -298,6 +325,8 @@ body {
 .team__card:hover {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .team__socials {
@@ -322,6 +351,8 @@ body {
 
 .team__socials li:hover {
   background-color: var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .team__socials li:hover .icon {
@@ -340,7 +371,7 @@ body {
 .customers__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 0.8;
+  line-height: 1.2;
   text-align: center;
   color: var(--black);
   margin-top: 94px;
@@ -372,10 +403,14 @@ body {
 
 .customers__box li:hover .icon {
   fill: var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .customers__box:hover {
   border: solid 1px var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 /* PORTFOLIO STYLE */
@@ -408,6 +443,8 @@ body {
   color: var(--white);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .filters-section button:focus {
@@ -415,6 +452,8 @@ body {
   color: var(--white);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 /* Portfolio section */
@@ -457,6 +496,40 @@ body {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.portfolio__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-portfolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--white);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.portfolio__container:hover .overlay-portfolio {
+  transform: translateY(0);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 /* Footer style */
@@ -476,7 +549,6 @@ body {
 
 .footer__logo {
   font-family: var(--logo-font);
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.1;
   color: var(--black);
@@ -535,6 +607,8 @@ body {
   line-height: 1.1;
   text-decoration: none;
   color: var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 /* Footer socials style */
@@ -547,7 +621,7 @@ body {
 .socials__title {
   font-size: 14px;
   font-weight: 700;
-  line-height: 0.8;
+  line-height: 1.2;
   color: var(--white);
   font-family: var(--primary-font);
   margin-bottom: 20px;
@@ -573,12 +647,16 @@ body {
 
 .footer__socials li:hover {
   background-color: var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .footer__socials li:hover .icon {
   fill: var(--white);
   stroke: var(--white);
   width: 20px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 /* default style */
