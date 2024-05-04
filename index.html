@@ -15,7 +15,7 @@
       <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body class="page-studio">
 
       <!-- Header section -->
       <header class="header">
@@ -31,9 +31,9 @@
 
                   <!-- Navigation bar-->
                   <nav class="header__navigation">
-                        <a href="index.html">Studio</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="contacts.html">Contacts</a>
+                        <a href="index.html" class="studio">Studio</a>
+                        <a href="portfolio.html" class="portfolio">Portfolio</a>
+                        <a href="contacts.html" class="contacts">Contacts</a>
                   </nav>
 
                   <!-- Info/contacts -->
@@ -69,7 +69,7 @@
                   <div class="container">
                         <h1 class="hero__title">Effective solutions for <br>
                               your business</h1>
-                        <button class="hero__button" type="button">Request our service</button>
+                        <button data-modal-open class="hero__button" type="button">Request our service</button>
                   </div>
 
             </section>
@@ -521,9 +521,19 @@
 
             </div>
 
-
       </footer>
-      <script src="./js/modal.js"></script>
+
+      <div data-modal class="is-hidden">
+            <div data-modal-content>
+                  <h2>Modal Title</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <button data-modal-close type="button">X</button>
+            </div>
+
+      </div>
+
+
+      <script src="./modal.js"></script>
 </body>
 
 </html>
